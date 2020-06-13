@@ -18,6 +18,7 @@
 		E860FEA42493C2C400032383 /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860FEA32493C2C400032383 /* UploadVC.swift */; };
 		E860FEA62493C2D600032383 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860FEA52493C2D600032383 /* SettingsVC.swift */; };
 		E860FEAA2493DE1C00032383 /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860FEA92493DE1C00032383 /* SnapVC.swift */; };
+		E860FEAD2495079F00032383 /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860FEAC2495079F00032383 /* UserSingleton.swift */; };
 		FA719427D5328D62171C5525 /* Pods_SnapChatClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16DAB4B4C995AFA34D825FA /* Pods_SnapChatClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		E860FEA32493C2C400032383 /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 		E860FEA52493C2D600032383 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		E860FEA92493DE1C00032383 /* SnapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVC.swift; sourceTree = "<group>"; };
+		E860FEAC2495079F00032383 /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
 		F2A63784458010230596035B /* Pods-SnapChatClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapChatClone.release.xcconfig"; path = "Target Support Files/Pods-SnapChatClone/Pods-SnapChatClone.release.xcconfig"; sourceTree = "<group>"; };
 		F617705D251EE58745D199F5 /* Pods-SnapChatClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapChatClone.debug.xcconfig"; path = "Target Support Files/Pods-SnapChatClone/Pods-SnapChatClone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 		E845CA392493B4ED00B04281 /* SnapChatClone */ = {
 			isa = PBXGroup;
 			children = (
+				E860FEAB2495077700032383 /* Model */,
 				E860FEA82493D64300032383 /* delegates */,
 				E860FEA72493C2DB00032383 /* viewControllers */,
 				E845CA402493B4ED00B04281 /* Main.storyboard */,
@@ -120,6 +123,14 @@
 				E845CA3C2493B4ED00B04281 /* SceneDelegate.swift */,
 			);
 			path = delegates;
+			sourceTree = "<group>";
+		};
+		E860FEAB2495077700032383 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E860FEAC2495079F00032383 /* UserSingleton.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E860FEAD2495079F00032383 /* UserSingleton.swift in Sources */,
 				E860FEA22493C2B400032383 /* FeedVC.swift in Sources */,
 				E845CA3F2493B4ED00B04281 /* SignInVC.swift in Sources */,
 				E845CA3B2493B4ED00B04281 /* AppDelegate.swift in Sources */,
