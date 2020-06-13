@@ -212,7 +212,7 @@
                         <outlet property="emailText" destination="0na-Cb-yok" id="moY-JJ-qD2"/>
                         <outlet property="passwordText" destination="l23-zY-NX4" id="8os-gs-oDm"/>
                         <outlet property="usernameText" destination="d5k-Gb-RKQ" id="gfh-sY-kZD"/>
-                        <segue destination="OKS-5M-9E2" kind="presentation" identifier="I" modalPresentationStyle="fullScreen" id="DKt-CU-uGc"/>
+                        <segue destination="OKS-5M-9E2" kind="presentation" identifier="toFeedVC" modalPresentationStyle="fullScreen" id="DKt-CU-uGc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
