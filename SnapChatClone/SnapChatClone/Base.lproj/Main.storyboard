@@ -112,7 +112,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="U2v-dE-BIe">
             <objects>
-                <tabBarController id="OKS-5M-9E2" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="OKS-5M-9E2" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sSV-Ap-Cvh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -230,6 +230,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1g-7G-qCq">
                                 <rect key="frame" x="142" y="421" width="130" height="54"/>
                                 <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logout:" destination="Iwx-jf-b0R" eventType="touchUpInside" id="Uuq-vH-vFt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -242,6 +245,9 @@
                         <viewLayoutGuide key="safeArea" id="ZAL-3O-lom"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="s.circle.fill" catalog="system" id="2jB-Um-llY"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toSignInVC" modalPresentationStyle="fullScreen" id="bI8-Jl-jbi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="esj-UL-1qB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
