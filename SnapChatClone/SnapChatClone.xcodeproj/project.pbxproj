@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E806CE9D2498106700EF9D92 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E806CE9C2498106700EF9D92 /* FeedCell.swift */; };
 		E845CA3B2493B4ED00B04281 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E845CA3A2493B4ED00B04281 /* AppDelegate.swift */; };
 		E845CA3D2493B4ED00B04281 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E845CA3C2493B4ED00B04281 /* SceneDelegate.swift */; };
 		E845CA3F2493B4ED00B04281 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E845CA3E2493B4ED00B04281 /* SignInVC.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		C16DAB4B4C995AFA34D825FA /* Pods_SnapChatClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapChatClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E806CE9C2498106700EF9D92 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		E845CA372493B4ED00B04281 /* SnapChatClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapChatClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E845CA3A2493B4ED00B04281 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E845CA3C2493B4ED00B04281 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				E845CA452493B4EE00B04281 /* LaunchScreen.storyboard */,
 				E845CA482493B4EE00B04281 /* Info.plist */,
 				E845CA4E2493B64900B04281 /* GoogleService-Info.plist */,
+				E806CE9C2498106700EF9D92 /* FeedCell.swift */,
 			);
 			path = SnapChatClone;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				E860FEAA2493DE1C00032383 /* SnapVC.swift in Sources */,
 				E845CA3D2493B4ED00B04281 /* SceneDelegate.swift in Sources */,
 				E860FEA62493C2D600032383 /* SettingsVC.swift in Sources */,
+				E806CE9D2498106700EF9D92 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

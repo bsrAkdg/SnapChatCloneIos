@@ -62,13 +62,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JLA-ep-0AA">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JLA-ep-0AA">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="698" id="gVv-dl-vVH" customClass="FeedCell" customModule="SnapChatClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="698"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gVv-dl-vVH" id="VHd-bS-FNr">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="698"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KJ-h5-PvJ">
+                                                    <rect key="frame" x="20" y="11" width="374" height="58"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="58" id="2eP-WJ-75a"/>
+                                                        <constraint firstAttribute="width" constant="374" id="e0p-1O-Md4"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Qz-qx-EVC">
+                                                    <rect key="frame" x="20" y="99" width="374" height="570"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="570" id="B2M-Js-yqu"/>
+                                                        <constraint firstAttribute="width" constant="374" id="jxo-6u-p0O"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5KJ-h5-PvJ" firstAttribute="top" secondItem="VHd-bS-FNr" secondAttribute="topMargin" id="7eE-bd-dat"/>
+                                                <constraint firstItem="5KJ-h5-PvJ" firstAttribute="trailing" secondItem="4Qz-qx-EVC" secondAttribute="trailing" id="Y2b-3q-Odc"/>
+                                                <constraint firstItem="5KJ-h5-PvJ" firstAttribute="leading" secondItem="4Qz-qx-EVC" secondAttribute="leading" id="Zoo-HU-hLe"/>
+                                                <constraint firstItem="4Qz-qx-EVC" firstAttribute="top" secondItem="5KJ-h5-PvJ" secondAttribute="bottom" constant="30" id="aqR-MU-g8w"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="4Qz-qx-EVC" secondAttribute="bottom" constant="18" id="jPq-Ah-fC2"/>
+                                                <constraint firstItem="5KJ-h5-PvJ" firstAttribute="leading" secondItem="VHd-bS-FNr" secondAttribute="leadingMargin" id="rNN-NK-28h"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="feedImage" destination="4Qz-qx-EVC" id="YuN-hZ-7cE"/>
+                                            <outlet property="username" destination="5KJ-h5-PvJ" id="gNW-ty-9Ne"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JLA-ep-0AA" firstAttribute="centerX" secondItem="Pde-lR-uDl" secondAttribute="centerX" id="RTm-b0-3aQ"/>
+                            <constraint firstItem="JLA-ep-0AA" firstAttribute="top" secondItem="Pde-lR-uDl" secondAttribute="topMargin" constant="-44" id="TPQ-SQ-YlY"/>
+                            <constraint firstItem="JLA-ep-0AA" firstAttribute="bottom" secondItem="MNF-wW-R02" secondAttribute="bottom" id="d9z-H0-fjN"/>
+                            <constraint firstItem="JLA-ep-0AA" firstAttribute="leading" secondItem="MNF-wW-R02" secondAttribute="leading" id="dNt-5v-hIu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MNF-wW-R02"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="f.circle.fill" catalog="system" id="Ts3-Nd-tCx"/>
@@ -79,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ad1-Ts-Hww" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-517" y="-1138"/>
+            <point key="canvasLocation" x="-517.39130434782612" y="-1138.3928571428571"/>
         </scene>
         <!--SnapVC-->
         <scene sceneID="lPn-s8-H3M">
