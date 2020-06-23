@@ -120,7 +120,7 @@
                     <tabBarItem key="tabBarItem" title="Feed" image="f.circle.fill" catalog="system" id="Ts3-Nd-tCx"/>
                     <connections>
                         <outlet property="snapTableView" destination="JLA-ep-0AA" id="b1Z-M8-wc8"/>
-                        <segue destination="Ftp-9S-pCI" kind="show" id="4XB-G3-62d"/>
+                        <segue destination="Ftp-9S-pCI" kind="show" identifier="toSnapVC" id="4XB-G3-62d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ad1-Ts-Hww" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
